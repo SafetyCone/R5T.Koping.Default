@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
-using R5T.Koping.Base;
+using R5T.Koping.Base;using R5T.T0064;
 
 
 namespace R5T.Koping.Default
-{
-    public class VisualStudioSolutionFolderProjectTypeGuidProvider : IVisualStudioSolutionFolderProjectTypeGuidProvider
+{[ServiceImplementationMarker]
+    public class VisualStudioSolutionFolderProjectTypeGuidProvider : IVisualStudioSolutionFolderProjectTypeGuidProvider,IServiceImplementation
     {
         public Guid GetVisualStudioSolutionFolderProjectTypeGuid()
         {
